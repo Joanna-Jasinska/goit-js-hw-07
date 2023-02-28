@@ -24,7 +24,16 @@ for (const gi of galleryItems) {
     e.preventDefault();
   };
 }
-let gallery = new SimpleLightbox(".gallery a");
+const options = {
+  captions: true,
+  captionsData: "alt",
+  captionSelector: "img",
+  captionType: "attr",
+  captionsData: "alt",
+  captionPosition: "bottom",
+  captionDelay: 250,
+};
+let gallery = new SimpleLightbox(".gallery a", options);
 gallery.on("show.simplelightbox", function () {
-  // nothing xD
+  //on show nothing :P
 });
